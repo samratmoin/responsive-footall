@@ -260,7 +260,7 @@ footer {
     margin-bottom: 60px;
   }
   .banner-image img {
-    widows: 100%;
+    width: 100%;
   }
 
   .banner-content h1 {
@@ -281,6 +281,16 @@ footer {
   }
   .player-info p {
     text-align: justify;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+  .footer-image img {
+    width: 100%;
+  }
+  .footer-info {
+    text-align: center;
   }
 }
 
@@ -317,7 +327,7 @@ footer {
     margin-bottom: 60px;
   }
   .banner-image img {
-    widows: 100%;
+    width: 100%;
   }
 
   .banner-content h1 {
@@ -343,6 +353,9 @@ footer {
   }
 
   .footer-container {
+    width: 100%;
+  }
+  .footer-image img {
     width: 100%;
   }
   .footer-info {
