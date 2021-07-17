@@ -16,6 +16,7 @@ main {
   align-items: center;
   justify-items: center;
 }
+
 /* header style start */
 header {
   background-color: #2d25a0;
@@ -168,6 +169,62 @@ nav {
 }
 /* players section style end */
 
+/* highlights section style start  */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  padding: 40px 0;
+  /* overflow: hidden; */
+}
+
+.highlights-text {
+  margin-top: 40px;
+}
+
+.highlights-video {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  margin-top: 30px;
+  padding-bottom: 56.25%;
+}
+
+.highlights-video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.highlights-text h2 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 60px;
+  color: #0a0826;
+}
+
+.highlights-text span {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  color: #fff;
+}
+
+.highlights-text p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+  color: #6c6c6c;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/* highlights section style end */
+
+/* highlights section style end */
+
 /* footer section style start */
 footer {
   display: flex;
@@ -220,17 +277,18 @@ footer {
 /* footer section style end */
 
 /* -------------------responsiveness start------------------------ */
-
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   nav {
     width: 100%;
   }
+
   .nav-container {
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
+
   .login {
     margin-top: 20px;
     display: flex;
@@ -260,6 +318,7 @@ footer {
     text-align: center;
     margin-bottom: 60px;
   }
+
   .banner-image img {
     width: 100%;
   }
@@ -268,6 +327,7 @@ footer {
     font-size: 3rem;
     line-height: 60px;
   }
+
   .container {
     width: 100%;
     display: grid;
@@ -277,19 +337,41 @@ footer {
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .single-player {
     text-align: center;
   }
+
   .player-info p {
     text-align: justify;
+  }
+
+  .highlights {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlights-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .highlights-text h2 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-container {
     width: 100%;
   }
+
   .footer-image img {
     width: 100%;
   }
+
   .footer-info {
     text-align: center;
   }
@@ -305,6 +387,7 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
   .login {
     margin-top: 20px;
     display: flex;
@@ -334,6 +417,7 @@ footer {
     text-align: center;
     margin-bottom: 60px;
   }
+
   .banner-image img {
     width: 100%;
   }
@@ -342,6 +426,7 @@ footer {
     font-size: 3rem;
     line-height: 60px;
   }
+
   .container {
     width: 100%;
     display: grid;
@@ -351,19 +436,41 @@ footer {
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .single-player {
     text-align: center;
   }
+
   .player-info p {
     text-align: justify;
+  }
+
+  .highlights {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .highlights-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .highlights-text h2 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-container {
     width: 100%;
   }
+
   .footer-image img {
     width: 100%;
   }
+
   .footer-info {
     text-align: center;
   }
@@ -418,21 +525,43 @@ footer {
   }
 
   .players {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   .single-player {
     text-align: center;
   }
+
   .player-info p {
     text-align: justify;
+  }
+
+  .highlights {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlights-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .highlights-text h2 {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 20px;
   }
 
   .footer-container {
     width: 100%;
   }
+
   .footer-image img {
     width: 100%;
   }
+
   .footer-info {
     text-align: center;
   }
